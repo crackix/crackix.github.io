@@ -1,0 +1,124 @@
+/********************
+  Common
+********************/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, verdana, monospace;
+  color: #FFF;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+  background: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+p {
+  padding: 0.8rem 0;
+  font-size: 0.8rem;
+}
+
+header#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.6rem;
+}
+
+/********************
+  Contents
+********************/
+
+canvas#canvas {
+  background: #000;
+}
+
+
+
+/********************
+  Explosive buttons
+********************/
+
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+}
+body, button {
+	font: 1em/1.5 Helvetica, verdana, monospace;
+}
+body {
+	background: #000000;
+	display: flex;
+	height: 100vh;
+	overflow: hidden;
+}
+button {
+	background: #ffffff;
+	border-radius: 0.2em;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	margin: auto;
+	padding: 0.5em 1em;
+	transition: background .15s linear, color .15s linear;
+}
+button:focus, button:hover {
+	background: #ffffff;
+}
+button:focus {
+	outline: transparent;
+}
+button::-moz-focus-inner {
+	border: 0;
+}
+button:active {
+	transform: translateY(0.1em);
+}
+.exploding, .exploding:focus, .exploding:hover {
+	background: transparent;
+	color: transparent;
+}
+.exploding {
+	pointer-events: none;
+	position: relative;
+	will-change: transform;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.particle {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.particle--debris {
+	background: #000000;
+}
+.particle--fire {
+	border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #17181c;
+	}
+}
